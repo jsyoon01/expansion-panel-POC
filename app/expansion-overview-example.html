@@ -1,0 +1,44 @@
+<mat-accordion>
+  <mat-expansion-panel style="min-height: 48px; height: 100%;">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <div class="row" style="width: 100%;">
+          <div class="col-xs-3">
+            Very loooooooooooooooong company name 
+          </div>
+          <div class="col-xs-1">
+            05397976
+          </div>
+        </div>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <input matInput placeholder="First name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Age">
+    </mat-form-field>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Self aware panel
+      </mat-panel-title>
+      <mat-panel-description>
+        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>I'm visible because I am open</p>
+  </mat-expansion-panel>
+</mat-accordion>
+
+<div class="row">
+  <div class="col-xs-4">abc</div>
+  <div class="col-xs-3">bcdef</div>
+</div>
+<!-- Copyright 2019 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

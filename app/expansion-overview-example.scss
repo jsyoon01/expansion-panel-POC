@@ -1,0 +1,15 @@
+/** No CSS for this example */
+::ng-deep {
+  .mat-expansion-panel {
+    min-height: 48px;
+    height: 100%;
+  }
+
+  .mat-expansion-panel-header {
+    height: 100% important;
+  }
+
+  .mat-expansion-panel-title {
+    height: 100% important;
+  }
+}
